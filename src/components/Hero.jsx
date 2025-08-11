@@ -67,7 +67,7 @@ export default function Hero({ resume }) {
           >
             <FaGithub />
           </a>
-        </div>
+        </div> 
       </div>
     </div>
   );
