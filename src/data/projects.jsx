@@ -2,7 +2,7 @@ export default [
   {
     slug: "kansaiben-master",
     title: "Kansaiben Master",
-    description: "표준 일본어를 간사이 방언으로 변환하는 웹앱. TTS 지원.",
+    description: "標準語を関西弁に変換するサービス",
     link: "https://kansaiben-converter.vercel.app/kansaiben",
     thumbnail: "/img/ben.png",
     tags: ["React", "OpenAI API", "TTS"],

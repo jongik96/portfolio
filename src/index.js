@@ -46,7 +46,7 @@ function Home() {
         <Timeline items={resume.timeline} />
       </section>
       <section id="projects" className="container py-12 sm:py-16 md:py-24">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight mb-6 sm:mb-8">Projects</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight mb-6 sm:mb-8">Toy Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {projects.map(p => <ProjectCard key={p.slug} project={p} />)}
         </div>
@@ -55,7 +55,7 @@ function Home() {
         <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-5 sm:p-6">
           <h3 className="text-lg sm:text-xl font-semibold mb-2">Contact</h3>
           <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
-            이메일: <a className="underline" href="mailto:you@example.com">you@example.com</a> · GitHub: <a className="underline" href="https://github.com/yourid">yourid</a>
+            E-mail : <a className="underline" href="mailto:you@example.com">you@example.com</a> · GitHub: <a className="underline" href="https://github.com/yourid">yourid</a>
           </p>
         </div>
       </section>

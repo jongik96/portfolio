@@ -18,15 +18,15 @@ export default function Hero({ resume = {} }) {
 
       <div>
         <h1 className="font-semibold tracking-tight text-[clamp(1.75rem,5vw,3rem)]">
-          {resume.name || "Your Name"}
+          {resume.name || "パク・ジョンイク ( Park Jong Ik )"}
         </h1>
 
         <p className="mt-2 sm:mt-3 text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
-          {(resume.title || "Frontend Developer")} · {(resume.location || "")}
+          {(resume.title || "Frontend Engineer")} · {(resume.location || "Kyoto, Japan")}
         </p>
 
         <p className="mt-4 sm:mt-6 leading-relaxed text-[15px] sm:text-base">
-          {resume.summary || "소개 텍스트를 여기에 입력하세요."}
+          {resume.summary || "（パク・ジョンイク）と申します。私は、着実に成長するフロントエンド開発者になるために、毎日短い時間でも学習を続け、復習や新しい知識の習得に時間を投資しています。また、複数回のプロジェクト経験を通じて、UI/UXを意識した開発や、バックエンド開発者・Webデザイナーなど多様なメンバーとの協働の重要性を身をもって実感しました。その中で、JiraやGitなどのツール理解を深め、円滑なコミュニケーションの重要性も常に意識しています。React、Next.js、TypeScriptを用いた開発を得意としており、AWSを活用したインフラ構築の経験も豊富にあります。"}
         </p>
 
         {/* 하이라이트 */}
