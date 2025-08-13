@@ -1,8 +1,30 @@
 // src/pages/TimelineDetail.jsx
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import resume from "../data/resume";
+
+function LinkBadge({ link }) {
+  const map = {
+    github: { icon: <FaGithub />, defaultLabel: "GitHub" },
+    link:   { icon: <FaExternalLinkAlt />, defaultLabel: "Link" },
+  };
+  const meta = map[link.type] ?? map.link;
+  const label = link.label || meta.defaultLabel;
+
+  return (
+    <a
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md border border-neutral-200 dark:border-neutral-700 hover:bg-pastel-accent/20 transition text-sm"
+      aria-label={`${label} を開く`}
+    >
+      <span className="text-base">{meta.icon}</span>
+      <span>{label}</span>
+    </a>
+  );
+}
 
 export default function TimelineDetail() {
   const { slug } = useParams();
@@ -47,53 +69,27 @@ export default function TimelineDetail() {
         <div className="bg-white rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 md:p-8">
           <h2 className="text-xl font-semibold mb-4">What I did / Learned</h2>
 
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {details.map((d, i) => (
-              <li
-                key={i}
-                className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-3"
-              >
+              <li key={i} className="flex flex-col gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-4">
                 <p className="text-neutral-700 dark:text-neutral-300">{d.text}</p>
 
-                {/* 깃허브 링크(옵션) — d.github: string | string[] 지원 */}
-                {d.github && (
+                {/* 여러 하이퍼링크 지원: github/demo/doc/slide/video/link 등 */}
+                {Array.isArray(d.links) && d.links.length > 0 && (
                   <div className="flex flex-wrap gap-2">
-                    {(Array.isArray(d.github) ? d.github : [d.github]).map((url, idx) => (
-                      <a
-                        key={idx}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md border border-neutral-200 dark:border-neutral-700 hover:bg-pastel-accent/20 transition text-sm"
-                      >
-                        <FaGithub className="text-base" />
-                        <span>GitHub</span>
-                      </a>
-                    ))}
+                    {d.links.map((lnk, idx) => <LinkBadge key={idx} link={lnk} />)}
                   </div>
                 )}
               </li>
             ))}
           </ul>
 
-          {/* 항목 외에 추가 레포 전체 목록이 있으면 (옵션) */}
-          {Array.isArray(item.repos) && item.repos.length > 0 && (
+          {/* 공통 링크 섹션(옵션) */}
+          {Array.isArray(item.links) && item.links.length > 0 && (
             <div className="mt-6">
-              <h3 className="font-medium mb-2">関連リポジトリ</h3>
+              <h3 className="font-medium mb-2">関連リンク</h3>
               <div className="flex flex-wrap gap-2">
-                {item.repos.map((r, idx) => (
-                  <a
-                    key={idx}
-                    href={r.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md border border-neutral-200 dark:border-neutral-700 hover:bg-pastel-accent/20 transition text-sm"
-                    aria-label={`GitHub: ${r.label}`}
-                  >
-                    <FaGithub className="text-base" />
-                    <span>{r.label || "GitHub"}</span>
-                  </a>
-                ))}
+                {item.links.map((lnk, i) => <LinkBadge key={i} link={lnk} />)}
               </div>
             </div>
           )}
