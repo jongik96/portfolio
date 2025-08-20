@@ -55,7 +55,8 @@ function Home() {
         <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-5 sm:p-6">
           <h3 className="text-lg sm:text-xl font-semibold mb-2">Contact</h3>
           <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
-            E-mail : <a className="underline" href="mailto:you@example.com">you@example.com</a> · GitHub: <a className="underline" href="https://github.com/yourid">yourid</a>
+            E-mail : <a className="underline" href="mailto:pji3503@gmail.com">pji3503@gmail.com</a> · 
+            GitHub: <a className="underline" href="https://github.com/jongik96">jongik96</a>
           </p>
         </div>
       </section>
