@@ -6,9 +6,9 @@ export default {
       title: "Learning advanced Japanese Language",
       period: "2024.10 ~ Now",
       place: "Kyoto, Japan",
-      desc: "TBD",
+      desc: "退職後の空白期間には日本語の勉強に集中していましたが、ページ下部のプロジェクトを開発しながら、感覚を失わないようにしてきました。",
       details: [
-        "TBD",
+        "ワーキングホリデービザで京都に在住しております。現在は日本語学習を中心に、日本の文化に慣れる時間を過ごしています。今後も関西地域に住み続け、就職して社会人生活を続けていくつもりです。"
       ],
     },
     {
