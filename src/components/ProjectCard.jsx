@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaCalendarAlt } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   return (
@@ -14,6 +14,17 @@ export default function ProjectCard({ project }) {
       
       <div className="p-4 sm:p-5">
         <h3 className="font-semibold text-sm sm:text-base text-pastel-text-light dark:text-white">{project.title}</h3>
+        
+        {/* 개발 기간 표시 */}
+        {project.period && (
+          <div className="flex items-center gap-2 mt-1 mb-2">
+            <FaCalendarAlt className="text-xs text-pastel-accent" />
+            <span className="text-[11px] sm:text-xs text-pastel-accent font-medium">
+              {project.period}
+            </span>
+          </div>
+        )}
+        
         <p className="text-[13px] sm:text-sm text-pastel-text-medium dark:text-neutral-300 line-clamp-2 mt-1 font-medium">
           {project.description}
         </p>
