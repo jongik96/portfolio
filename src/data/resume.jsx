@@ -31,7 +31,7 @@ export default {
       ],
     },
           {
-    slug: "software-curriculum-2021",
+    slug: "software-curriculum-2021-2",
     title: "サムスン青年SWアカデミー 第2学期（プロジェクト課程）",
     period: "2021.07 ~ 2021.11",
     place: "Gumi,  Republic of Korea",
@@ -56,7 +56,7 @@ export default {
   }
 ,
       {
-    slug: "software-curriculum-2021",
+    slug: "software-curriculum-2021-1",
     title: "サムスン青年SWアカデミー 第1学期（コーディング集中課程）",
     period: "2021.01 ~ 2021.05",
     place: "Gumi,  Republic of Korea",
