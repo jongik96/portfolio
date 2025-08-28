@@ -11,7 +11,7 @@ export default function Hero({ resume = {} }) {
   return (
     <div className="grid gap-6 sm:gap-8 md:grid-cols-[220px,1fr] items-center">
       <img
-        src={resume.photo || "/me.jpg"}
+        src={resume.photo || "/park.jpg"}
         alt={`${resume.name || ""} portrait`}
         className="w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 rounded-2xl object-cover ring-1 ring-neutral-200 dark:ring-neutral-800 shadow mx-auto md:mx-0"
       />
