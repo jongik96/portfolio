@@ -3,7 +3,7 @@ export default [
     slug: "pdfers",
     title: "PDF File Format Converter",
     description: "ファイル形式を変換するサービスサイト",
-    description_detail: "PDFファイルを様々な形式（Word、Excel、PowerPoint、画像など）に変換できるWebサービスです。ユーザーフレンドリーなインターフェースと高速な変換処理を提供し、ビジネスや個人用途での文書変換ニーズに対応しています。",
+    description_detail: "SEO最適化とGoogle AdSense連携によるビジネスモデルの検討。ユーザーフレンドリーなインターフェースと高速な変換処理を提供し、ビジネスや個人用途での文書変換ニーズに対応しています。",
     period: "2025.05 ~ 2025.07",
     link: "https://pdfers.com",
     github: "https://github.com/jongik96/pdf-converter",
