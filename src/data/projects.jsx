@@ -50,7 +50,7 @@ export default [
     period: "2024.12 ~ 2025.01",
     link: "https://class-scheduler-nine.vercel.app/",
     github: "https://github.com/jongik96/class-scheduler",
-    thumbnail: "/img/og-image-simple.svg",
+    thumbnail: "/img/schedule.png",
     tags: ["Next.js", "React", "Supabase", "TypeScript"],
     overview: "日本人大学生の同僚からの要望をきっかけに開発したWebサービスです。時間割管理、課題管理、友人との課題共有機能を提供し、Googleログイン連携とデプロイを完了しました。現在PC版は約90%完成しており、ユーザーフィードバックを反映しながら継続的に改善を行っています。デモモード追加、SEO最適化、モバイルCSS改善、ナビゲーションバー改善など、実際のユーザーからのフィードバックを基に継続的な改善を実施しています。",
     technologies: [
