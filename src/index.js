@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
 import ProjectCard from "./components/ProjectCard";
 import TimelineDetail from "./pages/TimelineDetail";
+import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 function Layout({ children }) {
@@ -71,6 +72,7 @@ function AppRouter() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/timeline/:slug" element={<TimelineDetail />} />
+          <Route path="/project/:slug" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

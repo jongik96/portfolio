@@ -1,16 +1,17 @@
 import { FaGithub, FaExternalLinkAlt, FaCalendarAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard({ project }) {
   return (
     <div className="group rounded-xl overflow-hidden border border-pastel-border-soft dark:border-neutral-700 hover:-translate-y-1 hover:shadow-md transition duration-200 touch-manipulation bg-pastel-card-soft dark:bg-neutral-900">
-      <a href={project.link} target="_blank" rel="noreferrer"
+      <Link to={`/project/${project.slug}`}
         className="block"
-        aria-label={`${project.title} を開く`}>
+        aria-label={`${project.title} の詳細を見る`}>
         <div className="aspect-video overflow-hidden bg-neutral-100 dark:bg-neutral-900">
           <img src={project.thumbnail} alt={`${project.title} thumbnail`}
                className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-300" loading="lazy" />
         </div>
-      </a>
+      </Link>
       
       <div className="p-4 sm:p-5">
         <h3 className="font-semibold text-sm sm:text-base text-pastel-text-light dark:text-white">{project.title}</h3>
@@ -57,16 +58,14 @@ export default function ProjectCard({ project }) {
             </a>
           )}
           
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to={`/project/${project.slug}`}
             className="inline-flex items-center gap-2 px-3 py-2 text-xs rounded-lg bg-pastel-accent hover:bg-pastel-accent/90 text-white transition-colors font-medium"
-            aria-label="プロジェクトサイトを開く"
+            aria-label="プロジェクト詳細を見る"
           >
             <FaExternalLinkAlt className="text-sm" />
-            サイトを見る
-          </a>
+            詳細を見る
+          </Link>
         </div>
       </div>
     </div>
