@@ -1,5 +1,21 @@
 export default {
   // ...기존 필드들
+  languageSkills: [
+    {
+      language: "日本語",
+      level: "JLPT N2",
+      score: "N2",
+      description: "京都で1年間集中して学習し、JLPT N2を取得しました。実生活で日本語を使用しながら実力を継続的に向上させています。",
+      experience: "京都居住経験を通じた実用的な日本語実力向上"
+    },
+    {
+      language: "英語",
+      level: "TOEIC 710点",
+      score: "710",
+      description: "前職で海外企業との英語会議を通じて実務英語実力を大幅に向上させました。ビジネスコミュニケーションに自信があります。",
+      experience: "海外企業との英語会議経験を通じた実務英語実力向上"
+    }
+  ],
   timeline: [
     {
       slug: "kappo-frontend-parttime",

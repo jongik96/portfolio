@@ -9,6 +9,7 @@ import projects from "./data/projects";
 import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
 import ProjectCard from "./components/ProjectCard";
+import LanguageSkills from "./components/LanguageSkills";
 import TimelineDetail from "./pages/TimelineDetail";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
@@ -22,6 +23,7 @@ function Layout({ children }) {
           <a href="/" className="font-semibold tracking-tight">Park.dev</a>
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="/#about" className="hover:opacity-70">About</a>
+            <a href="/#languages" className="hover:opacity-70">Language</a>
             <a href="/#projects" className="hover:opacity-70">Projects</a>
             <a href="/#contact" className="hover:opacity-70">Contact</a>
           </nav>
@@ -45,6 +47,10 @@ function Home() {
       </section>
       <section id="timeline" className="container py-6 sm:py-10 md:py-12">
         <Timeline items={resume.timeline} />
+      </section>
+      <section id="languages" className="container py-12 sm:py-16 md:py-24">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight mb-6 sm:mb-8">語学能力</h2>
+        <LanguageSkills languageSkills={resume.languageSkills} />
       </section>
       <section id="projects" className="container py-12 sm:py-16 md:py-24">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight mb-6 sm:mb-8">Toy Projects</h2>
