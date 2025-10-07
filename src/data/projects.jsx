@@ -48,7 +48,7 @@ export default [
     description: "日本の地域別料理と文化を紹介するAIレシピプラットフォーム",
   description_detail: "日本各地の料理と食文化を紹介しながら、AIを活用したレシピ推薦システムを提供するウェブサービスです。ユーザーは地域ごとの特色ある料理を学びつつ、条件に応じた最適なレシピ提案を受けることができます。さらに、足りない材料や調理器具を自動検出し、楽天やAmazonのアフィリエイトリンクを自動でマッチングする機能も備えています。",
   period: "2025.07~2025.08",
-  link: "https://japanfoodweb.vercel.app/",
+  link: "https://japan-food-web.com",
   github: "https://github.com/jongik96/japan-food-web",
   thumbnail: "/img/foodwebthumb.png",
   tags: ["Next.js","Tailwind CSS","Supabase","OpenAI API","Vercel"],
