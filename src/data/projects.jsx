@@ -21,48 +21,45 @@ export default [
     achievements: "このプロジェクトを通じて、ファイル変換処理の最適化技術を習得し、SEO対策の重要性を実感しました。また、ユーザビリティを重視したUI/UX設計により、変換成功率を95%以上に向上させることができました。Google AdSenseの実装により、Webサービスの収益化についても学ぶことができました。"
   },
   {
-    slug: "payment-map",
-    title: "Payment Map",
-    description: "日本の飲食店決済方法共有プラットフォーム",
-    description_detail: "日本の飲食店で利用可能な決済方法を地図上で共有・確認できるプラットフォームです。ユーザーが実際に利用した店舗の決済方法を登録し、他のユーザーが事前に決済方法を確認できることで、キャッシュレス決済の普及を促進します。",
-    period: "2025.08~2025.08",
-    link: "https://paymap-japan.vercel.app/",
-    github: "https://github.com/jongik96/paymap-japan",
-    thumbnail: "/img/og-image-simple.svg",
-    tags: ["React","Next.js","Google Maps API","Redis"],
-    overview: "日本の飲食店における決済方法の情報を地図上で共有・確認できるプラットフォームです。ユーザーは実際に利用した店舗の決済方法（現金、クレジットカード、電子マネー、QRコード決済など）を登録でき、他のユーザーが事前に決済方法を確認できることで、キャッシュレス決済の普及を促進します。",
-    technologies: [
-      "React 18 - フロントエンド開発",
-      "Next.js 13 - フルスタック開発",
-      "Google Maps API - 地図表示・位置情報",
-      "Redis - 高速データキャッシュ",
-      "Prisma - データベースORM",
-      "PostgreSQL - データベース",
-      "Tailwind CSS - スタイリング"
-    ],
-    achievements: "Google Maps APIの実装により、地図ベースのアプリケーション開発スキルを向上させました。Redisを活用したキャッシュ戦略により、地図データの読み込み速度を大幅に改善できました。また、ユーザー体験を重視した直感的なUI設計により、店舗情報の登録・検索の効率性を向上させることができました。"
+    slug: "LeanShortcuts",
+    title: "LearnShortcuts.dev",
+  description: "Windows・Mac の Excel・Word・PowerPoint ショートカット学習サイト",
+  description_detail: "Windows・Mac 向けの Excel・Word・PowerPoint のショートカットキーを完全網羅し、検索・お気に入り登録・可視化など多彩な機能で効率的な学習をサポートするプラットフォームです。自然言語処理を活用した Excel 関数ジェネレーター機能も搭載し、日常業務の生産性向上を目指します。",
+  period: "2025.09~2025.10",
+  link: "https://learnshortcuts.dev/",
+  github: "https://github.com/jongik96/learnshortcuts",
+  thumbnail: "/img/shortcut.png",
+  tags: ["Next.js","TypeScript","Tailwind CSS","Lucide React"],
+  overview: "Windows・Mac の Excel・Word・PowerPoint ショートカットを一括で学べる学習プラットフォームです。検索機能やキーボード視覚化機能を搭載し、ユーザーが効率的に目的のショートカットを見つけられるよう設計されています。さらに、Excel専用の関数ジェネレーター機能により、自然言語から関数を生成し、即座に実用的な結果を得ることができます。",
+  technologies: [
+    "Next.js 15.5.3 - Reactベースのフロントエンドフレームワーク",
+    "TypeScript - 型安全な開発環境",
+    "Tailwind CSS 4 - ユーティリティファーストなスタイリング",
+    "Lucide React - アイコンライブラリ",
+    "React Hooks - 状態管理 (useState, useEffect, useMemo)",
+    "LocalStorage - お気に入り・設定情報の保存",
+    "ESLint - コード品質管理"
+  ],
+  achievements: "ショートカット検索機能とキーボード可視化UIを通じて、ユーザーが視覚的に学習できる体験を実現しました。自然言語処理を用いた Excel 関数ジェネレーターを開発し、「日付から年だけ抽出したい」といった文章から適切な関数 (=YEAR(A1)) を生成できるようにしました。また、レスポンシブデザインを最適化し、スマートフォン・タブレット・デスクトップいずれの環境でも快適に利用できるUIを構築しました。"
   },
   {
-    slug: "class-scheduler",
-    title: "大学生向け時間割・課題管理Webサービス",
-    description: "大学生の時間割管理と課題共有プラットフォーム",
-    description_detail: "日本人大学生の同僚からの要望をきっかけに開発したWebサービス。時間割管理、課題管理、友人との課題共有機能を提供し、Googleログイン連携とデプロイを完了。現在PC版は約90%完成しており、ユーザーフィードバックを反映しながら継続的に改善を行っています。",
-    period: "2024.12 ~ 2025.01",
-    link: "https://class-scheduler-nine.vercel.app/",
-    github: "https://github.com/jongik96/class-scheduler",
-    thumbnail: "/img/schedule.png",
-    tags: ["Next.js", "React", "Supabase", "TypeScript"],
-    overview: "日本人大学生の同僚からの要望をきっかけに開発したWebサービスです。時間割管理、課題管理、友人との課題共有機能を提供し、Googleログイン連携とデプロイを完了しました。現在PC版は約90%完成しており、ユーザーフィードバックを反映しながら継続的に改善を行っています。デモモード追加、SEO最適化、モバイルCSS改善、ナビゲーションバー改善など、実際のユーザーからのフィードバックを基に継続的な改善を実施しています。",
-    technologies: [
-      "Next.js 15 - フルスタックフレームワーク",
-      "React 19 - モダンなUI構築",
-      "TypeScript - 型安全性の確保",
-      "Tailwind CSS v4 - レスポンシブデザイン",
-      "Supabase - 認証・データベース",
-      "Google OAuth - ソーシャルログイン",
-      "Vercel - デプロイメント",
-      "date-fns - 日付処理"
-    ],
-    achievements: "実際の日本人大学生ユーザーによる継続的なテストを実施し、フィードバックに基づく機能改善と運用サイクルを経験しました。デモモード追加により未ログインユーザーでも主要機能を体験できるよう改善し、SEO最適化で検索結果での露出を強化しました。モバイルCSS改善とナビゲーションバー改善により、ユーザビリティとアクセシビリティを大幅に向上させることができました。サービス改善履歴とパフォーマンス最適化の過程を文書化し、継続的な改善サイクルを確立しました。"
+    slug: "Japan Food Web",
+    title: "Japan Food Web - AI Recipe",
+    description: "日本の地域別料理と文化を紹介するAIレシピプラットフォーム",
+  description_detail: "日本各地の料理と食文化を紹介しながら、AIを活用したレシピ推薦システムを提供するウェブサービスです。ユーザーは地域ごとの特色ある料理を学びつつ、条件に応じた最適なレシピ提案を受けることができます。さらに、足りない材料や調理器具を自動検出し、楽天やAmazonのアフィリエイトリンクを自動でマッチングする機能も備えています。",
+  period: "2025.07~2025.08",
+  link: "https://japanfoodweb.vercel.app/",
+  github: "https://github.com/jongik96/japan-food-web",
+  thumbnail: "/img/foodwebthumb.png",
+  tags: ["Next.js","Tailwind CSS","Supabase","OpenAI API","Vercel"],
+  overview: "日本の地域別料理と文化を紹介しつつ、AIを活用してユーザーの好みや条件に合わせたレシピを提案するプラットフォームです。カロリーや調理時間などの条件検索にも対応しており、家庭での料理体験をよりスマートにします。ブログでは各地域の食文化を掘り下げたコラムをISRによって自動更新し、常に新しい情報を提供しています。",
+  technologies: [
+    "Next.js 14 (App Router) - フロントエンドおよびSSR/ISR構築",
+    "Tailwind CSS - レスポンシブで統一感のあるデザイン",
+    "Supabase - データベース、認証、Edge Functions",
+    "OpenAI API - レシピ推薦および自然言語処理",
+    "Vercel - デプロイメントおよびホスティング"
+  ],
+  achievements: "AIレシピ推薦システムを実装し、カロリー・調理時間・材料条件を考慮した動的なレシピ提案を実現しました。Supabase Edge Functions を用いて材料・調理器具の不足検出を自動化し、ユーザー体験を最適化。また、楽天・Amazonのアフィリエイトリンクを自動的に生成・マッチングする仕組みを構築し、収益化を意識した設計を実現しました。さらに、ISR機能によるブログ自動再生成で、SEOと更新効率を両立しました。"
   },
 ];
